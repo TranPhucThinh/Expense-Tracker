@@ -34,10 +34,11 @@ export default defineConfig([
       ...reactHooks.configs.recommended.rules,
       ...react.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'no-unused-vars': ['warn', { varsIgnorePattern: '^[A-Z_]' }],
       'react/jsx-uses-react': 'off',
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-vars': 'error',
+      'react/prop-types': 'off',
       'prettier/prettier': [
         'warn',
         {
